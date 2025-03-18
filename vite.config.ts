@@ -17,5 +17,6 @@ export default defineConfig({
                 project1: 'projects/project-1/index.html'
             }
         }
-    }
+    },
+    base: '/frontend-mentor/'
 })
