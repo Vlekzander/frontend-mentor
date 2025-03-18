@@ -13,7 +13,8 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: 'index.html'
+                main: 'index.html',
+                project1: 'projects/project-1/index.html'
             }
         }
     }
