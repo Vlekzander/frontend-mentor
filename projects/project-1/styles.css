@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-myslate-900: #1F314F;
+    --color-myslate-500: #68778D;
+    --color-myslate-300: #D5E1EF;
+}
+
+body {
+    @apply font-[outfit] h-screen flex flex-col justify-center items-center bg-myslate-300;
+}
+
+.card {
+    @apply bg-white w-[320px] rounded-[20px] p-4 text-center;
+}
+
+.card img {
+    @apply rounded-[10px];
+}
+
+.card-title {
+    @apply text-myslate-900 text-[22px]/[120%] tracking-[0px] font-bold
+}
+
+.card-text {
+    @apply text-myslate-500 text-[15px]/[140%] tracking-[0.2px]
+}
