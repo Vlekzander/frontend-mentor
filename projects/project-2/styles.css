@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-maize: hsl(47, 88%, 63%);
+    --color-dim-gray: hsl(0, 0%, 42%);
+    --color-chinese-black: hsl(0, 0%, 7%);
+}
+
+body {
+    @apply h-screen flex justify-center items-center bg-maize p-6 font-[figtree] text-chinese-black;
+}
+
+.blog-card {
+    @apply flex flex-col gap-y-6 bg-white rounded-[20px] p-6 border shadow-[8px_8px_0_rgb(0,0,0)] max-w-[384px];
+}
+
+.blog-card > img {
+    @apply rounded-[10px];
+}
+
+.blog-content {
+    @apply flex flex-col gap-y-3;
+}
+
+.blog-theme {
+    @apply bg-maize rounded-sm py-1 px-3 text-xs font-extrabold w-min;
+}
+
+.blog-date {
+    @apply text-xs;
+}
+
+.blog-title {
+    @apply font-extrabold text-xl;
+}
+
+.blog-title:hover {
+    @apply text-maize;
+}
+
+.blog-desc {
+    @apply text-dim-gray text-sm;
+}
+
+.blog-author {
+    @apply flex items-center space-x-3;
+}
+
+.blog-author img {
+    @apply aspect-square w-8;
+}
+
+.blog-author p {
+    @apply font-bold text-sm;
+}
