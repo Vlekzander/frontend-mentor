@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-green-yellow: hsl(75, 94%, 57%);
+  --color-dark-charcoal: hsl(0, 0%, 20%);
+  --color-eerie-black: hsl(0, 0%, 12%);
+  --color-chinese-black: hsl(0, 0%, 8%);
+}
+
+body {
+  @apply bg-chinese-black flex justify-center items-center p-6;
+}
+
+.profile {
+  @apply bg-eerie-black text-white text-center p-6 rounded-xl font-[inter] flex flex-col space-y-6;
+}
+
+.user-infos {
+  @apply flex flex-col items-center;
+}
+
+.user-infos img {
+  @apply rounded-full aspect-square w-22 mb-7;
+}
+
+.user-infos h1 {
+  @apply text-2xl font-bold;
+}
+
+.user-infos .location {
+  @apply text-green-yellow;
+}
+
+.links {
+  @apply flex flex-col space-y-4;
+}
+
+.links a {
+  @apply bg-dark-charcoal rounded-sm font-semibold h-[45px] flex items-center justify-center;
+}
