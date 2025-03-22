@@ -9,11 +9,11 @@
 }
 
 body {
-  @apply bg-chinese-black flex justify-center items-center p-6;
+  @apply bg-chinese-black flex justify-center items-center p-6 h-screen;
 }
 
 .profile {
-  @apply bg-eerie-black text-white text-center p-6 rounded-xl font-[inter] flex flex-col space-y-6;
+  @apply bg-eerie-black text-white text-center p-6 rounded-xl font-[inter] flex flex-col space-y-6 w-[390px];
 }
 
 .user-infos {
@@ -37,5 +37,5 @@ body {
 }
 
 .links a {
-  @apply bg-dark-charcoal rounded-sm font-semibold h-[45px] flex items-center justify-center;
+  @apply bg-dark-charcoal hover:bg-green-yellow hover:text-dark-charcoal rounded-sm font-semibold h-[45px] flex items-center justify-center;
 }
