@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-c-green-500: hsl(158, 36%, 37%);
+    --color-c-green-700: hsl(158, 42%, 18%);
+    --color-c-black: hsl(212, 21%, 14%);
+    --color-c-grey: hsl(228, 12%, 48%);
+    --color-c-cream: hsl(30, 38%, 92%);
+}
+
+body {
+    @apply flex h-screen items-center justify-center bg-c-cream p-4 md:items-start md:pt-13;
+}
+
+.product {
+    @apply flex flex-col rounded-xl bg-white font-[Montserrat] font-[500] text-c-grey md:h-[450px] md:flex-row;
+}
+
+.product .mobile-image {
+    @apply rounded-t-xl md:hidden;
+}
+
+.product .desktop-image {
+    @apply hidden rounded-l-xl md:block;
+}
+
+.product-preview {
+    @apply flex flex-col gap-y-3 p-6 md:w-[300px] md:justify-evenly md:p-8;
+}
+
+.category {
+    @apply text-xs tracking-[0.42em] uppercase;
+}
+
+.name {
+    @apply font-[Fraunces] text-[2rem]/[1] font-bold text-c-black capitalize;
+}
+
+.description {
+    @apply pt-1.5 text-sm/[1.7];
+}
+
+.price-container {
+    @apply flex items-center gap-x-5;
+}
+
+.current-price {
+    @apply font-[Fraunces] text-[2rem] font-bold text-c-green-500;
+}
+
+.base-price {
+    @apply text-[0.8rem];
+}
+
+.product button {
+    @apply flex items-center justify-center gap-x-2 rounded-[8px] bg-c-green-500 p-3.5 text-sm font-[500] text-white;
+}
+
+.product button:hover {
+    @apply cursor-pointer bg-c-green-700;
+}
