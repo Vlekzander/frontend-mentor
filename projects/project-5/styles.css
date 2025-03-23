@@ -10,7 +10,7 @@
 }
 
 body {
-    @apply flex h-screen items-center justify-center bg-c-cream p-4 md:items-start md:pt-13;
+    @apply flex h-screen items-center justify-center bg-c-cream p-4;
 }
 
 .product {
