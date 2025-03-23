@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-c-stone-100: hsl(30, 54%, 90%);
+    --color-c-stone-150: hsl(30, 18%, 87%);
+    --color-c-stone-600: hsl(30, 10%, 34%);
+    --color-c-stone-900: hsl(24, 5%, 18%);
+
+    --color-c-brown-800: hsl(14, 45%, 36%);
+
+    --color-c-rose-50: hsl(330, 100%, 98%);
+    --color-c-rose-800: hsl(332, 51%, 32%);
+}
