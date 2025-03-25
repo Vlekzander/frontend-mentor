@@ -20,6 +20,7 @@ export default defineConfig({
                 project4: 'projects/project-4/index.html',
                 project5: 'projects/project-5/index.html',
                 project6: 'projects/project-6/index.html',
+                project7: 'projects/project-7/index.html',
             }
         }
     },
